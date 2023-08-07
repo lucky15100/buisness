@@ -1,0 +1,440 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.brand-logo img {
+  height: 60px;
+}
+
+nav {
+  margin-left: 500px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #555;
+}
+
+.slideshow-container {
+  width: 100%;
+  max-height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headline {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.headline h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.headline p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.about-banner {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-button {
+  display: inline-block;
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #e67e22;
+}
+
+.contact-banner {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-banner img {
+  width: 50%;
+  height: 350px;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Add your contact section styles here */
+/* Existing CSS styles are assumed to be present here */
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e67e22;
+}
+/* Existing CSS styles for header, main content, contact form, location details, and map container */
+
+footer {
+  background-color: darkblue;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Space between brand and other content */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.brand-logo-footer img {
+  height: 60px;
+}
+
+.brand-logo-footer h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.footer-about-us {
+  max-width: 300px;
+  margin-top: 100px; /* Add spacing between brand and about us */
+  text-align: left;
+  float: left;
+  
+}
+
+.footer-about-us p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: left
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column; /* Show navigation items vertically */
+  align-items: center; /* Align navigation items to the center */
+  justify-content: center; /* Center navigation items vertically */
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin: 10px;
+  padding: 100px;
+}
+
+.footer-nav li {
+  margin-bottom: 10px; /* Add spacing between navigation items */
+}
+
+.footer-nav li:last-child {
+  margin-bottom: 0; /* Remove spacing for the last navigation item */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #f39c12;
+}
+
+.footer-location {
+  flex: 1;
+  text-align: right; /* Align address and map to the right */
+}
+
+.footer-location h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-location p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-map {
+  margin-top: 20px;
+}
+
+.footer-map iframe {
+  width: 50%;
+  height: 50%;
+  border: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+.sectors-eadingserved-h {
+  text-align: center;
+  color: green;
+  text-decoration: wavy;
+  margin: 60px;
+}
+/* Existing styles */
+
+/* Add the styles for the grid */
+/* Existing styles */
+
+/* Existing styles */
+
+/* Existing styles */
+
+/* Add the styles for the grid */
+/* Existing styles */
+
+/* Add the styles for the grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in a row */
+  gap: 20px; /* Gap between grid items */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid */
+  margin-top: 40px; /* Add space below the Sectors Served heading */
+  justify-content: center; /* Center the grid horizontally */
+}
+
+.grid-item {
+  text-align: center;
+  width: 250px; /* Adjust the width of the card */
+  height: 200px; /* Adjust the height of the card */
+  padding: 20px; /* Add padding for the card layout */
+  background-color: #ffffff; /* Add background color for the card layout */
+  border-radius: 4px; /* Add rounded corners for the card layout */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for the card layout */
+}
+
+.grid-item img {
+  width: 117px; /* Adjust the image size to fit the card layout */
+  height: 80px; /* Adjust the image size to fit the card layout */
+  object-fit: cover;
+  margin-bottom: 10px; /* Add spacing between image and text */
+}
+
+.grid-item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+.grid-item p {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: bold; /* Add bold font weight to the caption */
+  text-transform: uppercase; /* Add uppercase text to the caption */
+  margin-bottom: 5px; /* Reduce the spacing between caption and image */
+}
+.grid-item:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+.why-us {
+  text-decoration: double;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.card {
+  flex-basis: calc(25% - 20px); /* Four cards in a row with spacing */
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 150px;
+  height: 100px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+.card-container::after {
+  content: "";
+  flex: auto;
+}
+.sectors-eadingserved-h {
+  color: green;
+  text-decoration: solid;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white; /* Change the background color to pearl white (#f0f0f0) */
+}
+@media (max-width: 600px) {
+  .headline h1 {
+    font-size: 1.8rem;
+  }
+
+  .headline p {
+    font-size: 1rem;
+  }
+
+  /* Add other responsive styles for smaller screens if needed */
+}
+
+/* Styles for screens larger than 600px (laptops and desktops) */
+@media (min-width: 600px) {
+  .headline h1 {
+    font-size: 2.5rem;
+  }
+
+  .headline p {
+    font-size: 1.2rem;
+  }
+
+  /* Add other responsive styles for larger screens if needed */
+}
